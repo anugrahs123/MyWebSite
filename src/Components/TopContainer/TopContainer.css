@@ -1,0 +1,13 @@
+.topContainer{
+    background: url('../../../public/images/backgroud.jpg');
+
+    height: 112vh;
+    padding: 150px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* object-fit: contain; */
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+ 
+    
+}

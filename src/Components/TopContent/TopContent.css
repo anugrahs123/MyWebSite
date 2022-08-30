@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Pro:wght@200&family=Montserrat:wght@600&display=swap');
+.topContent{
+    color: white;
+    position: relative;
+    padding:60px 0;
+}
+.topContent__Container{
+    position: absolute;
+    top:300px;
+    right:150px
+
+
+}
+.topContent__Container> p{
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 3px;
+    padding-top: 20px;
+}
+.topContent__Container> a> button{
+    margin-top: 30px;
+    text-align: left;
+    border: none;
+    margin-left: 5px;
+    border-radius: 2px;
+    outline: none;
+}
+
+.topContent__Container>h1{
+    font-size:4vw;
+    font-family: 'Montserrat',sans-serif;
+}
+.topContent__downloadButton{
+    color: white;
+    background-color:#f6400f;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-family: 'Montserrat',sans-serif;;
+    font-weight: 300;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.topContent__downloadButton:hover{
+    background-color: white;
+    color:#f6400f;
+    font-weight: 600;
+}
+.topContent__workButton{
+border:1px solid white  !important;
+color:white;
+background-color: transparent;
+font-size: 14px;
+padding: 9px 45px;
+font-family: 'Montserrat',sans-serif;;
+cursor: pointer;
+font-weight: 300;
+}
+.topContent__workButton:hover{
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+.user{
+    background-image: url("./../../../public/images/anugrah.jpg");
+    opacity: 0.9;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top:-130px
+}

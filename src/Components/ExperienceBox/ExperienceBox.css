@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Pro:wght@200&family=Josefin+Sans:wght@300&family=Montserrat:wght@600&display=swap');
+
+
+.experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-wrap: wrap;
+    overflow: hidden;
+    border:2px dotted white;
+    width:200px;
+    height: 150px;
+    background-color: black;
+    margin:5px;
+}
+.experience >p{
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
