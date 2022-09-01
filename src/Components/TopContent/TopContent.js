@@ -34,16 +34,14 @@ function TopContent() {
             <h1>Anugrah S</h1>
             
 
-            <p>I'm <Typical wrapper="span" steps={steps} loop={100} className={'caca'} /></p>
+            <p>I'm <span className='span-1'> <Typical wrapper="span" steps={steps} loop={100} className={'caca'} /></span></p>
 
             <a>
                 <button className='topContent__downloadButton' onClick={onButtonClick}>Download CV</button>
             </a>
 
             <a href="https://wa.me/9526777078"
-            class="whatsapp_float"
             target="_blank"
-            rel="noopener noreferrer"
             >
                 <button className='topContent__workButton' >Join with me</button>
             </a>
