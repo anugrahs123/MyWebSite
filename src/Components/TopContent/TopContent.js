@@ -1,24 +1,55 @@
 import React from 'react'
 import {Link} from 'react-scroll'
 import '../TopContent/TopContent.css'
+import Typical from 'react-typical'
 
 function TopContent() {
+  const steps = [
+    'ReactJS Developer', 2000,
+    'Angular Developer', 2000,
+    'NodeJS Developer', 2000,
+    'Full-Stack-Developer ', 2000,
+   
+  ];
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('./../Image/ANUGRAH RESUME.pdf').then(response => {
+      console.log("res",response);
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'RESUME.pdf';
+            alink.click();
+        })
+    })
+  }
   return (
     <div className='topContent'>
   
         <div className='topContent__Container'>
         <div className="user"></div>
             <h1>Anugrah S</h1>
-            <p>Web Developer</p>
-            <a href='www.google.com'>
-                <button className='topContent__downloadButton'>Download CV</button>
+            
+
+            <p>I'm <Typical wrapper="span" steps={steps} loop={100} className={'caca'} /></p>
+
+            <a>
+                <button className='topContent__downloadButton' onClick={onButtonClick}>Download CV</button>
             </a>
 
-            <Link to='projects'smooth={true} duration={500}>
-                <button className='topContent__workButton'>Join with me</button>
-            </Link>
+            <a href="https://wa.me/9526777078"
+            class="whatsapp_float"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+                <button className='topContent__workButton' >Join with me</button>
+            </a>
 
         </div>
+    
     </div>
   )
 }
