@@ -30,6 +30,12 @@ function ProjectContainer() {
              desc:'Weather_checking',
              link:'https://lweather-app123.netlify.app/'
         },
+        {
+            img:'https://res.cloudinary.com/dg0vog2t7/image/upload/v1662462569/Pro5_unsvpf.png',
+            title:"Todo App",
+             desc:'TODO LIST',
+             link:'https://anugrahs123.github.io/CASE/'
+        },
        
     ]
   return (

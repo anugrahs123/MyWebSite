@@ -1,10 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Element} from 'react-scroll'
 import {IconButton} from '@mui/material';
 import {Facebook,Instagram,Twitter,GitHub,LinkedIn} from '@mui/icons-material'
 import './Contact.css'
 
 function Contact() {
+
+    const currentTime=()=>{
+        const el=document.getElementById("demo");
+        let date=new Date();
+        let hh=date.getHours();
+        let mm=date.getMinutes();
+        let ss=date.getSeconds();
+        hh=hh < 10 ? `0${hh}` : hh;
+        mm=mm < 10 ? `0${mm}` : mm;
+        ss=ss < 10 ? `0${ss}` : ss;
+        let time= `${hh}:${mm}:${ss}`;
+        el.innerHTML=time
+    
+      }
+    
+    useEffect(() => {
+        currentTime()
+      setInterval(currentTime,1000)
+    })
+    
   return (
     <Element id='contact'  className='contact'>
 <h1>Contact</h1>
@@ -60,6 +80,8 @@ function Contact() {
        
     </div>
 </div>
+<h3 className='time' id='demo'></h3>
+<p>&copy;All Right Reserved</p>
 
     </Element>
   )
