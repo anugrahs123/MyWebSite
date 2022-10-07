@@ -40,7 +40,7 @@ function TopContent() {
                 <button className='topContent__downloadButton' onClick={onButtonClick}>Download CV</button>
             </a>
 
-            <a href="https://wa.me/9526777078"
+            <a href="https://wa.me/919526777078"
             target="_blank"
             >
                 <button className='topContent__workButton' >Join with me</button>
