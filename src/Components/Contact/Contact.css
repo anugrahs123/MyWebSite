@@ -1,39 +1,91 @@
-.contact{
-
+.contact {
     display: flex;
-    margin:200px 0px 100px;
     justify-content: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    text-align: center;
     color: white;
-    align-items: center;
-    flex-direction: column;
-    padding:60px 0;
+    backdrop-filter: blur(5px);
 }
-.conatact__container{
+
+.contact-card h1 {
+    margin-bottom: 5px;
+}
+
+.contact__cta {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4fa3ff;
+    margin-bottom: 20px;
+}
+
+.contact__icon {
     display: flex;
     justify-content: center;
-    align-items: center;
-
-  width:600px;
- 
-    height:200px;
-    border: 1px solid white;
-    padding:30px;
-    flex-direction: column;
-    margin-top: 20px;;
+    gap: 15px;
+    margin-bottom: 15px;
 }
-.conatact__container>p{
+
+.contact__icon a .MuiSvgIcon-root {
+    color: white;
+    font-size: 28px;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.contact__icon a:hover .MuiSvgIcon-root {
+    color: #4fa3ff;
+    transform: scale(1.1);
+}
+
+/* Contact Details */
+.contact-details {
     text-align: left;
-    font-size: 20px;
-    padding-bottom: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
-.conatact__container>p>span{
-    color:rgb(57, 57, 228)
-}
-.contact__icon >a>button> .MuiSvgIcon-root{
-    color:white;
-    font-size: 30px
 
+.contact-details p {
+    margin: 5px 0;
+    font-size: 16px;
 }
-/* .conatact__container >button{
-    color:white !important
-} */
+
+.contact-details span a {
+    color: #4fa3ff;
+    text-decoration: none;
+}
+
+.contact-details span a:hover {
+    text-decoration: underline;
+}
+
+/* Map */
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/* Time */
+.time {
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 10px 0;
+}
+
+/* Footer */
+.contact__footer {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
