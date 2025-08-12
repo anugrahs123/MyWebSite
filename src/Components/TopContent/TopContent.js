@@ -1,55 +1,61 @@
-import React from 'react'
-import {Link} from 'react-scroll'
-import '../TopContent/TopContent.css'
-import Typical from 'react-typical'
+import React from "react";
+import "../TopContent/TopContent.css";
+import { TypeAnimation } from "react-type-animation";
 
 function TopContent() {
-  const steps = [
-    'ReactJS Developer', 2000,
-    'Angular Developer', 2000,
-    'NodeJS Developer', 2000,
-    'Full-Stack-Developer ', 2000,
-   
-  ];
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch('./../Image/ANUGRAH RESUME.pdf').then(response => {
-      console.log("res",response);
-        response.blob().then(blob => {
-            // Creating new object of PDF file
-            const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'RESUME.pdf';
-            alink.click();
-        })
-    })
-  }
   return (
-    <div className='topContent'>
-  
-        <div className='topContent__Container'>
+    <div className="topContent">
+      <div className="topContent__Container">
         <div className="user"></div>
-            <h1>Anugrah S</h1>
-            
 
-            <p>I'm <span className='span-1'> <Typical wrapper="span" steps={steps} loop={100} className={'caca'} /></span></p>
+        <h1>Anugrah S</h1>
 
-            <a>
-                <button className='topContent__downloadButton' onClick={onButtonClick}>Download CV</button>
-            </a>
+        {/* Short tagline */}
+        <h3 className="tagline">
+          Software Engineer | React JS | Angular | Node JS | AWS | FastAPI Enthusiast
+        </h3>
 
-            <a href="https://wa.me/919526777078"
-            target="_blank"
-            >
-                <button className='topContent__workButton' >Join with me</button>
-            </a>
+        <p>
+          I'm{" "}
+          <span className="span-1">
+            <TypeAnimation
+              sequence={[
+                "Crafting interactive UIs with React.js",
+                2000,
+                "Building dynamic apps in Angular",
+                2000,
+                "Engineering scalable APIs in Node.js",
+                2000,
+                "Delivering end-to-end Full-Stack solutions",
+                2000,
+                "Integrating AI-powered features",
+                2000,
+                "Exploring cutting-edge technologies",
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+              className="caca"
+            />
+          </span>
+        </p>
 
-        </div>
-    
+        {/* Direct download from public folder */}
+        <a href="/Anugrah_S_9526777078.pdf" download="Anugrah_S_Resume.pdf">
+          <button className="topContent__downloadButton">Download Resume</button>
+        </a>
+
+        <a
+          href="https://wa.me/919526777078"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="topContent__workButton">Join with me</button>
+        </a>
+      </div>
     </div>
-  )
+  );
 }
 
-export default TopContent
+export default TopContent;

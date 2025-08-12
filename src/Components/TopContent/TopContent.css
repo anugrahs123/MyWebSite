@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Pro:wght@200&family=Montserrat:wght@600&display=swap');
-.topContent{
+
+.topContent {
     color: white;
     position: relative;
-    padding:60px 0;
+    padding: 60px 0;
 }
-.topContent__Container{
+
+.topContent__Container {
     position: absolute;
-    top:300px;
-    right:150px
-
-
+    top: 300px;
+    right: 150px
 }
-.topContent__Container> p{
+
+.topContent__Container>p {
     letter-spacing: 1px;
     text-align: left;
     padding-left: 3px;
     padding-top: 20px;
 }
-.topContent__Container> a> button{
+
+.topContent__Container>a>button {
     margin-top: 30px;
     text-align: left;
     border: none;
@@ -26,43 +28,47 @@
     outline: none;
 }
 
-.topContent__Container>h1{
-    font-size:4vw;
-    font-family: 'Montserrat',sans-serif;
+.topContent__Container>h1 {
+    font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
 }
-.topContent__downloadButton{
+
+.topContent__downloadButton {
     color: white;
-    background-color:#f6400f;
+    background-color: black;
     font-size: 14px;
     padding: 10px 30px;
-    font-family: 'Montserrat',sans-serif;;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     margin-right: 20px;
     cursor: pointer;
 
 }
 
-.topContent__downloadButton:hover{
-    background-color: white;
-    color:#f6400f;
-    font-weight: 600;
-}
-.topContent__workButton{
-border:1px solid white  !important;
-color:white;
-background-color: transparent;
-font-size: 14px;
-padding: 9px 45px;
-font-family: 'Montserrat',sans-serif;;
-cursor: pointer;
-font-weight: 300;
-}
-.topContent__workButton:hover{
+.topContent__downloadButton:hover {
     color: black;
     background-color: white;
     font-weight: 600;
 }
-.user{
+
+.topContent__workButton {
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    padding: 9px 45px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.topContent__workButton:hover {
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+
+.user {
     background-image: url("./../../../public/images/anugrah.jpg");
     opacity: 0.9;
     background-size: cover;
@@ -72,8 +78,16 @@ font-weight: 300;
     border-radius: 50%;
     position: absolute;
     left: 0px;
-    top:-130px
+    top: -130px
 }
-.span-1{
+
+.span-1 {
     color: #f6400f;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0.5rem;
 }

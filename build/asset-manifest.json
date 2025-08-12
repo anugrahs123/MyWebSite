@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.93cd3f94.css",
-    "main.js": "/static/js/main.f09427e1.js",
+    "main.css": "/static/css/main.b1e093db.css",
+    "main.js": "/static/js/main.76f93112.js",
     "static/js/787.21d17fcb.chunk.js": "/static/js/787.21d17fcb.chunk.js",
     "static/media/nasa.jpg": "/static/media/nasa.de5659898d3bfc5eb8ea.jpg",
     "static/media/backgroud.jpg": "/static/media/backgroud.bb796b09c6b76731ed41.jpg",
-    "static/media/anugrah.jpg": "/static/media/anugrah.beda987db376067df499.jpg",
-    "static/media/mern&mean.jpg": "/static/media/mern&mean.55db111dd11a23f92ec8.jpg",
+    "static/media/anugrah.jpg": "/static/media/anugrah.98e739ed8cf2195d7907.jpg",
     "index.html": "/index.html",
-    "main.93cd3f94.css.map": "/static/css/main.93cd3f94.css.map",
-    "main.f09427e1.js.map": "/static/js/main.f09427e1.js.map",
+    "main.b1e093db.css.map": "/static/css/main.b1e093db.css.map",
+    "main.76f93112.js.map": "/static/js/main.76f93112.js.map",
     "787.21d17fcb.chunk.js.map": "/static/js/787.21d17fcb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93cd3f94.css",
-    "static/js/main.f09427e1.js"
+    "static/css/main.b1e093db.css",
+    "static/js/main.76f93112.js"
   ]
 }
